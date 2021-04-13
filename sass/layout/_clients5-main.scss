@@ -1,0 +1,94 @@
+// clients
+
+.clients{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #fff;
+
+  @media screen and (min-width:$desktop){
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+  }
+
+  &-title{
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:$title-color;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    @media screen and(min-width:$desktop){
+      padding-bottom: 50px;
+    }
+    }
+
+    &-list{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      @media screen and(min-width:$tablet){
+      margin-right: -30px;
+      margin-bottom: -30px;
+      }    
+    }
+}
+
+.clients-list__item{
+  margin-bottom: 30px;
+
+  &:nth-child(2n-1){
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width:$mobile) and(max-width:67px){
+    width: calc((100% - 4 * 30px) / 2);
+  }
+  @media screen and (min-width:$tablet) and(max-width: 1599px){
+    width: calc((100% - 6 * 30px) / 3);
+
+  }
+ 
+  
+  
+  
+
+}
+
+
+
+
+
+
+.clients-list__link{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    background-color: transparent;
+    color:#AFB1B8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+  color:$accent-color;
+  border-color: $accent-color;
+
+  }
+}
+
+.clients-list__icon{
+  fill:currentColor;
+}
+
