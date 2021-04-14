@@ -208,12 +208,14 @@ body {
 }
 
 .navigation__link {
+  text-align: start;
   display: block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+  margin-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -254,6 +256,7 @@ body {
 
 .contact-info {
   margin-top: 302px;
+  text-align: start;
 }
 
 .contact-info__item:not(:last-child) {
@@ -321,16 +324,18 @@ body {
   fill: currentColor;
 }
 
-.is-open {
-  opacity: 1;
+.menu-container.is-open {
+  transform: translateY(0);
   visibility: visible;
   pointer-events: auto;
+  overflow-y: scroll;
 }
 
 .menu-container {
-  opacity: 0;
+  transform: translateY(-100%);
   visibility: hidden;
   pointer-events: none;
+  transition: transform 300ms linear;
   position: fixed;
   top: 0;
   left: 0;
@@ -345,6 +350,7 @@ body {
 }
 
 .menu-container__btn-cross {
+  transform: translateY(0);
   position: absolute;
   top: 21px;
   right: 25px;
@@ -545,14 +551,17 @@ body {
   margin-bottom: 8px;
 }
 
-.wrap-address {
-  text-align: center;
-  margin-bottom: 60px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .wrap-address {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .wrap-address {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -566,7 +575,7 @@ body {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-join {
     margin-left: auto;
   }
@@ -583,9 +592,10 @@ body {
   display: inline-block;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__wrapper {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -607,7 +617,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .form-wrap--action {
     text-align: center;
   }
@@ -636,7 +646,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px), (max-width: 1599px) {
+@media screen and (max-width: 480px), (max-width: 1199px) {
   .form__input {
     margin-bottom: 20px;
   }

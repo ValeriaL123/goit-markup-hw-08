@@ -18,19 +18,21 @@
 
 // Мобильное меню
 
-.is-open {
-  opacity: 1;
+.menu-container.is-open {
+  transform: translateY(0);
   visibility: visible;
   pointer-events: auto;
+  overflow-y: scroll;
 }
 
 
   .menu-container{
 
 
-    opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+    transform: translateY(-100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 300ms linear;
 
   
     position: fixed;
@@ -44,18 +46,21 @@
     &__icon-cross{
       fill: currentColor;
     }
-  }
-  
-  .menu-container__btn-cross{
-    position: absolute;
-    top: 21px;
-    right: 25px;
-    fill:$title-color;
-  
-    &:focus{
-      color:$accent-color;
+
+    &__btn-cross{
+      transform: translateY(0);
+      position: absolute;
+      top: 21px;
+      right: 25px;
+      fill:$title-color;
+    
+      &:focus{
+        color:$accent-color;
+      }
     }
   }
+  
+  
   
     
 

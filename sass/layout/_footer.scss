@@ -38,11 +38,15 @@
 }
 
 .wrap-address{
-  text-align: center;
-  margin-bottom: 60px;
+  @media screen and(min-width:$mobile) and(max-width:767px){
+    text-align: center;
+    margin-bottom: 60px;
+  }
+ 
 
   @media screen and(min-width:$desktop){
     margin-right: 70px;
+    text-align: left;
   }
   &__logo{
     display: block;
@@ -54,7 +58,7 @@
   text-align: center;
   margin-bottom: 60px;
   
-  @media screen and(min-width:$tablet) and(max-width:1599px){
+  @media screen and(min-width:$tablet) and(max-width:1199px){
     margin-left: auto;
   }
 
@@ -74,8 +78,9 @@
   // form-contact
 
   .footer__wrapper{
-    @media screen and(min-width:$desktop){
+    @media screen and(min-width:$tablet){
       display: flex;
+      align-items: center;
     }
   }
 
@@ -96,7 +101,7 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: $secondary-white-color;
-      @media screen and(max-width:1599px){
+      @media screen and(max-width:1199px){
         text-align: center;
       }
       
@@ -124,7 +129,7 @@
       border-radius: 4px;
       background-color: transparent;
       margin: 0 auto;
-      @media screen and(max-width:$mobile),(max-width:1599px){
+      @media screen and(max-width:$mobile),(max-width:1199px){
         margin-bottom: 20px;
       }
       
