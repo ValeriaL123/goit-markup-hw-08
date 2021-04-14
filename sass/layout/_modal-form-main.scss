@@ -167,19 +167,31 @@
 // modal-form
 
 .modal{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   padding:40px;
- 
-  min-width: 528px;
-  min-height: 581px;
+   
+  min-width: 450px;
+  min-height: 609px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transition: transform 250ms ease-in-out;
+
+
+@media screen and(min-width:$tablet){
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+  @media screen and (min-width:$desktop){
+    min-width: 528px;
+    min-width: 581px;
+  }
+  
+  
+
 
   &.is-hidden{
     transform:translate(-50%, -50%) scale(0);

@@ -1,0 +1,64 @@
+.header__mobile-btn,
+.menu-container__btn-cross{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+
+.header__mobile-btn:focus{
+  color:$accent-color;
+}
+
+.header__mobile-icon{
+  fill:$title-color;
+  fill:currentColor;
+
+}
+
+// Мобильное меню
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+  .menu-container{
+
+
+    opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:$secondary-white-color;
+    padding: 48px 40px;
+  
+    &__icon-cross{
+      fill: currentColor;
+    }
+  }
+  
+  .menu-container__btn-cross{
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    fill:$title-color;
+  
+    &:focus{
+      color:$accent-color;
+    }
+  }
+  
+    
+
+
+
+
