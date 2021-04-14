@@ -85,8 +85,8 @@ body {
 
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -96,6 +96,8 @@ body {
 @media screen and (min-width: 1600px) {
   .section-title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -106,6 +108,7 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: #2196f3;
+  display: block;
 }
 
 .logo--color {
@@ -422,6 +425,12 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .description .description__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .description .description__item {
     margin-right: 30px;
@@ -520,26 +529,8 @@ body {
 
 @media screen and (min-width: 1600px) {
   .clients {
-    padding-top: 94px;
+    padding-right: 94px;
     padding-bottom: 94px;
-  }
-}
-
-.clients-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1600px) {
-  .clients-title {
-    padding-bottom: 50px;
   }
 }
 
@@ -549,30 +540,39 @@ body {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 480px) and (max-width: 767px) {
   .clients-list {
     margin-right: -30px;
     margin-bottom: -30px;
   }
 }
 
-.clients-list__item {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .clients-list {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 }
 
-.clients-list__item:nth-child(2n-1) {
-  margin-right: 30px;
-}
-
-@media screen and (min-width: 480px) and (max-width: 67px) {
+@media screen and (max-width: 480px) and (max-width: 767px) {
   .clients-list__item {
     width: calc((100% - 4 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .clients-list__item {
     width: calc((100% - 6 * 30px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .clients-list__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -785,15 +785,10 @@ body {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1600px) {
   .footer__container {
     display: flex;
-    align-items: center;
   }
-}
-
-.address {
-  margin-top: 20px;
 }
 
 .address__text {
@@ -819,12 +814,6 @@ body {
   margin-bottom: 8px;
 }
 
-@media screen and (min-width: 1600px) {
-  .address__link {
-    margin-bottom: 9px;
-  }
-}
-
 .wrap-address {
   text-align: center;
   margin-bottom: 60px;
@@ -836,9 +825,20 @@ body {
   }
 }
 
+.wrap-address__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .footer-join {
   text-align: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .footer-join {
+    margin-left: auto;
+  }
 }
 
 .footer-join--action {
@@ -852,9 +852,17 @@ body {
   display: inline-block;
 }
 
-.form-wrap {
-  display: block;
-  margin-left: 93px;
+@media screen and (min-width: 1600px) {
+  .footer__wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .form-wrap {
+    display: block;
+    margin-left: 93px;
+  }
 }
 
 .form-wrap--action {
@@ -866,6 +874,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1599px) {
+  .form-wrap--action {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -888,7 +902,19 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
-  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px), (max-width: 1599px) {
+  .form__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .form__input {
+    width: 358px;
+  }
 }
 
 .form__input::placeholder {
@@ -899,6 +925,12 @@ body {
   padding: 10px 28px 10px 29px;
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1600px) {
+  .form__btn {
+    margin-left: 12px;
+  }
 }
 
 .form__icon {

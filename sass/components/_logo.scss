@@ -5,14 +5,18 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: $accent-color;
- 
-
+  display: block;
+  
+  
   &--color {
     color: #000000;
   }
 
   &--color-white {
   color: $secondary-white-color;
+ }
+
 }
-}
+
+
 

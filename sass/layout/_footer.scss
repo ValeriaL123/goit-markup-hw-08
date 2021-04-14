@@ -7,18 +7,16 @@
 
   &__container{
 
-    @media screen and(min-width:$tablet){
+    @media screen and(min-width:$desktop){
       display: flex;
-      align-items: center;
+      
     }
   }
 }
 
 
 .address{
-  margin-top: 20px;
- 
-
+  
   &__text {
     font-size: 14px;
     line-height: 1.7;
@@ -36,12 +34,8 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 8px;
-    @media screen and(min-width:$desktop){
-      margin-bottom: 9px;
-    }
   }
 }
-
 
 .wrap-address{
   text-align: center;
@@ -50,11 +44,19 @@
   @media screen and(min-width:$desktop){
     margin-right: 70px;
   }
+  &__logo{
+    display: block;
+    margin-bottom: 20px;
+   }
   
 }
 .footer-join{
   text-align: center;
   margin-bottom: 60px;
+  
+  @media screen and(min-width:$tablet) and(max-width:1599px){
+    margin-left: auto;
+  }
 
   &--action{
     font-weight: bold;
@@ -71,9 +73,19 @@
 
   // form-contact
 
+  .footer__wrapper{
+    @media screen and(min-width:$desktop){
+      display: flex;
+    }
+  }
+
   .form-wrap{
-    display: block;
-    margin-left: 93px;
+    @media screen and(min-width:$desktop){
+      display: block;
+      margin-left: 93px;
+
+    }
+  
   
     &--action{
       display: block;
@@ -84,6 +96,10 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: $secondary-white-color;
+      @media screen and(max-width:1599px){
+        text-align: center;
+      }
+      
     
     }
   }
@@ -107,28 +123,35 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 4px;
       background-color: transparent;
-      margin-bottom: 20px;
+      margin: 0 auto;
+      @media screen and(max-width:$mobile),(max-width:1599px){
+        margin-bottom: 20px;
+      }
+      
+
+      @media screen and(min-width:$desktop){
+        width: 358px;
+      }
     
       &::placeholder{
         color: rgba(255, 255, 255, 0.6);
       }
+
+
     }
 
     &__btn{
       padding: 10px 28px 10px 29px;
       display: flex;
       align-items: center;
+      @media screen and(min-width:$desktop){
+        margin-left: 12px;
+      }
     
     }
   
   }
   
-  
-  
-  
-  
-  
- 
   
   .form__icon{
    margin-left: 10px;
