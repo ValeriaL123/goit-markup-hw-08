@@ -192,6 +192,7 @@ body {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -199,6 +200,9 @@ body {
     display: flex;
     align-items: center;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-info {
     display: flex;
     margin-left: auto;
@@ -277,16 +281,21 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-info__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .contact-info__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .contact-info {
     display: flex;
-    align-items: center;
     margin-left: auto;
   }
   .contact-info__contact-info__item {

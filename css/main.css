@@ -192,6 +192,7 @@ body {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -199,6 +200,9 @@ body {
     display: flex;
     align-items: center;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-info {
     display: flex;
     margin-left: auto;
@@ -277,16 +281,21 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-info__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .contact-info__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .contact-info {
     display: flex;
-    align-items: center;
     margin-left: auto;
   }
   .contact-info__contact-info__item {
@@ -423,8 +432,9 @@ body {
 }
 
 .main {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-optimized.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/opt-1x-2x/header-mobile@1x.jpg);
   background-color: #2f303a;
+  background-size: cover;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -457,6 +467,24 @@ body {
 
 .main__btn {
   padding: 10px 32px;
+}
+
+@media not all, screen and (min-width: 480px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/opt-1x-2x/header-mobile@2x.jpg);
+  }
+}
+
+@media not all, screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/opt-1x-2x/header-tablet@2x.jpg);
+  }
+}
+
+@media not all, screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/opt-1x-2x/header-desktop@2x.jpg);
+  }
 }
 
 .qualities {

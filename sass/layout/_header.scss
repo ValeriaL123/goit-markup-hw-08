@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
+  justify-content: flex-end;
 }
 
 @media screen and(min-width:$tablet){
@@ -32,13 +33,17 @@
     display: flex;
     align-items:center;
   }
-  .contact-info{
+}
+
+
+.contact-info{
+  @media screen and(min-width: $tablet) and( max-width:1199px){
     display: flex;
     margin-left: auto;
     flex-direction: column;
   }
+ 
 }
-
 
 
 .navigation__item{
@@ -123,16 +128,24 @@
 
   
 }
+.contact-info__item{
 
-.contact-info__item:not(:last-child){
-  @media screen and( min-width:$tablet){
-    margin-bottom: 10px;
+  &:not(:last-child){
+    @media screen and( min-width:$tablet) and(max-width:1199px){
+      margin-bottom: 10px;
+    }
   }
+  &:not(:last-child){
+    @media screen and(min-width: $desktop){
+      margin-right: 50px;
+    }
+  }
+
 }
+
 .contact-info{
   @media screen and(min-width:$desktop){
     display: flex;
-        align-items: center;
         margin-left: auto;
         &__contact-info__item{
           margin-right: 50px;
