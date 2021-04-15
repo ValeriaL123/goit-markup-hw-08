@@ -22,8 +22,12 @@
     <div class="container header__container">
 
       
-        <a class="link logo logo--margin-right" href="index.html"> Web<span class="logo--color">Studio</span> </a>
-        <nav class="nav">
+        
+        
+          
+            <a class="link logo logo--margin-right" href="index.html"> Web<span class="logo--color">Studio</span> </a>
+            <nav class="nav">
+          
     <!-- Меню -->
 
 <!-- Меню-бургер -->
@@ -33,6 +37,7 @@
       </svg>
 
     </button>
+
 
 
     <div class="menu-container" data-menu>
@@ -207,7 +212,14 @@
       <li class="section__item">  
 
         <div class="thumb-pic">
-        <img src="./img/typing_comp.png" width="370" alt="Печатать на компьютере">
+
+          <picture>
+            <source srcset="./img/opt-1x-2x/computer-desktop/computer1-desktop@1x.jpg 1x, ./img/opt-1x-2x/computer-desktop/computer1-desktop@2x.jpg 2x" 
+            media="(min-width: $desktop)">
+
+            <img src="./img/typing_comp.png" alt="Печатать на компьютере">
+          </picture>
+        
 
         <div class="thumb-wrap section__thumb-wrap-pos">
           <h3 class="thumb-wrap__title">Десктопные приложения</h3>
@@ -222,7 +234,12 @@
       <li class="section__item"> 
 
         <div class="thumb-pic">
-        <img src="./img/telephone.png" width="370" alt="Телефон и компьютер">
+
+          <picture>
+            <source srcset="./img/opt-1x-2x/computer-desktop/computer2-desktop@1x.jpg 1x, ./img/opt-1x-2x/computer-desktop/computer2-desktop@2x.jpg 2x" media="(min-width: $desktop)">
+            <img src="./img/telephone.png" alt="Телефон и компьютер">
+          </picture>
+       
 
         <div class="thumb-wrap section__thumb-wrap-pos">
           <h3 class="thumb-wrap__title">Мобильные приложения</h3>
@@ -237,7 +254,12 @@
       <li class="section__item"> 
 
         <div class="thumb-pic">
-        <img src="./img/tablet.png" width="370" alt="Планшет">
+
+          <picture>
+            <source srcset="./img/opt-1x-2x/computer-desktop/computer3-desktop@2x.jpg 2x, ./img/opt-1x-2x/computer-desktop/computer3-desktop@1x.jpg 1x " media="(min-width: $desktop">
+            <img src="./img/tablet.png" alt="Планшет">
+          </picture>
+      
 
         <div class="thumb-wrap section__thumb-wrap-pos">
           <h3 class="thumb-wrap__title">Дизайнерские решения</h3>
@@ -265,7 +287,18 @@
     <ul class="list description">
   
       <li class="description__item">
-        <img src="./img/man.jpg" width="270" alt="Дизайнер продукта">
+
+        <picture>
+          <source srcset="./img/opt-1x-2x/img1-mobile@1x.jpg 1x, ./img/opt-1x-2x/img1-mobile@2x.jpg 2x" 
+          media="(min-width:$ mobile)">
+          <source srcset="./img/opt-1x-2x/img1-mobile@1x.jpg 1x, ./img/opt-1x-2x/img1-mobile@2x.jpg 2x" 
+          media="(min-width: $tablet)">
+          <source srcset="./img/opt-1x-2x/img1-desktop@1x.jpg 1x, ./img/opt-1x-2x/img1-desktop@2x.jpg 2x" 
+          media="(min-width: $desktop)">
+
+          <img src="./img/man.jpg" alt="Дизайнер продукта">
+        </picture>
+        
         
         <div class="description-thumb">
           <h3 class="description-title">Игорь Демьяненко</h3>
@@ -307,7 +340,18 @@
         </li>
   
       <li class="description__item">
-        <img src="./img/woman.jpg" width="270" alt="Девушка разработчик">
+
+        <picture>
+          <source srcset="./img/opt-1x-2x/img2-mobile@1x.jpg 1x, ./img/opt-1x-2x/img2-mobile@2x.jpg 2x" 
+          media="(min-width: $mobile)">
+          <source srcset="./img/opt-1x-2x/img2-tablet@1x.jpg 1x, ./img/opt-1x-2x/img2-tablet@2x.jpg 2x" 
+          media="(min-width: $tablet)">
+          <source srcset="./img/opt-1x-2x/img2-desktop@1x.jpg 1x, ./img/opt-1x-2x/img2-desktop@2x.jpg 2x" 
+          media="(min-width: $desktop)">
+
+          <img src="./img/woman.jpg" alt="Девушка разработчик">
+        </picture>
+        
         
         <div class="description-thumb">
         <h3 class="description-title">Ольга Репина</h3>
@@ -351,7 +395,20 @@
       </li>
   
       <li class="description__item">
-        <img src="./img/frontend_boy.jpg" width="270" alt="Маркетолог">
+
+        <picture>
+          <source srcset="./img/opt-1x-2x/img3-mobile@1x.jpg 1x, ./img/opt-1x-2x/img3-mobile@2x.jpg 2x" 
+          
+          media="(min-width: $mobile)">
+          <source srcset="./img/opt-1x-2x/img3-tablet@1x.jpg 1x, ./img/opt-1x-2x/img3-tablet@2x.jpg 2x" 
+          
+          media="(min-width: $tablet)">
+          <source srcset="./img/opt-1x-2x/img3-desktop@1x.jpg 1x, ./img/opt-1x-2x/img3-desktop@2x.jpg 2x" 
+          media="(min-width: $desktop)">
+
+          <img src="./img/frontend_boy.jpg" alt="Маркетолог">
+        </picture>
+        
        
         <div class="description-thumb">
         <h3 class="description-title">Николай Тарасов</h3>
@@ -397,7 +454,19 @@
       </li>
   
       <li class="description__item">
-        <img src="./img/man_with_glasses.jpg" width="270" alt="UI дизайнер">
+
+        <picture>
+          <source srcset="./img/opt-1x-2x/img4-mobile@1x.jpg 1x, ./img/opt-1x-2x/img4-mobile@2x.jpg 2x,"
+           media="(min-width: $mobile)">
+
+          <source srcset="./img/opt-1x-2x/img4-desktop@1x.jpg 1x, ./img/opt-1x-2x/img4-desktop@2x.jpg 2x,"
+          media="(min-width: $tablet)">
+
+          <source srcset="./img/opt-1x-2x/img4-desktop@1x.jpg 1x, ./img/opt-1x-2x/img4-desktop@2x.jpg 2x" media="(min-width: $desktop)">
+
+        <img src="./img/man_with_glasses.jpg" alt="UI дизайнер">
+        </picture>
+        
         
         <div class="description-thumb">
         <h3 class="description-title">Михаил Ермаков</h3>
