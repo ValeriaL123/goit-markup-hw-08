@@ -7,9 +7,8 @@
 
   &__container{
 
-    @media screen and(min-width:$desktop){
-      display: flex;
-      
+  @media screen and(min-width:$desktop){
+      display: flex; 
     }
   }
 }
@@ -141,8 +140,6 @@
       &::placeholder{
         color: rgba(255, 255, 255, 0.6);
       }
-
-
     }
 
     &__btn{
@@ -152,9 +149,7 @@
       @media screen and(min-width:$desktop){
         margin-left: 12px;
       }
-    
     }
-  
   }
   
   
@@ -172,12 +167,12 @@
     &__icon{
       fill:$secondary-white-color;
     }
-    
+
+    &__item:not(:last-child){
+    margin-right: 10px;
+    } 
   }
   
-  .footer-social-list__item:not(:last-child){
-    margin-right: 10px;
-  }
   
   
   .footer-social-list__link{
@@ -195,5 +190,5 @@
     &:hover,
     &:focus{
     background-color: $accent-color;
-  }
+    }
   }

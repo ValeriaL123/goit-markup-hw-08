@@ -24,6 +24,12 @@
     &__item:not(:last-child){
       margin-right: 30px; 
     }
+
+    &__thumb-wrap-pos{
+      position: absolute;
+      bottom:0;
+      left:0;
+    }
   }
   
 
@@ -31,11 +37,7 @@
     position: relative;
   }
   
-.section__thumb-wrap-pos{
-  position: absolute;
-  bottom:0;
-  left:0;
-}
+
 
 .thumb-wrap{
   
@@ -44,7 +46,7 @@
   min-width: 370px;
   padding-bottom: 27px;
 
-  .thumb-wrap__title{
+  &__title{
     font-family: $main-font;
     font-weight: 700;
     font-size: 14px;

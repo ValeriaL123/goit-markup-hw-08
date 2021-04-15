@@ -49,8 +49,7 @@
 }
 .features__item{
 
-  @media screen and(min-width:$tablet)
-{
+  @media screen and(min-width:$tablet){
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc((100% - 4 * 30px) / 2);
@@ -60,18 +59,6 @@
     width: calc((100% - 8 * 30px) / 4);
   }
 }
-
-
-
-// desktop
-// .features__item{
-//   flex-basis: calc(100% / 4);
-
-//   &:not(:last-child){
-//     margin-right: 30px;
-//     }
-// }
-
 
 
 .thumb{
