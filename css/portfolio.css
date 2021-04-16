@@ -444,7 +444,7 @@ body {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .filter-list__item:not(:nth-last-child(-n+3)) {
+  .filter-list__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 15px;
   }
 }
