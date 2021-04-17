@@ -30,6 +30,8 @@
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
 
+  flex-grow: 1;
+
   &__title{
     font-size: 18px;
     line-height: 2;
@@ -91,6 +93,9 @@
   margin-right: 30px;
   margin-bottom: 3px;
   width: calc((100% - 4 * 30px) / 2);
+
+  display: flex;
+  flex-wrap: wrap;
 }
 @media screen and(min-width: $desktop){
   margin-right: 30px;
@@ -110,3 +115,14 @@
     padding: 63px 24px;
   }
 }
+
+.portfolio__link{
+  @media screen and(min-width: $tablet){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// .thumb-portfolio{
+//   flex-grow: 1;
+// }
