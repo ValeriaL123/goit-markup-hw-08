@@ -4,7 +4,7 @@
 
   @media screen and(max-width:767px){
     .menu-container{
-
+z-index: 100;
       transform: translateY(-100%);
       visibility: hidden;
       pointer-events: none;

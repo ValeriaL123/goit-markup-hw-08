@@ -132,12 +132,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contant-info__link:hover .contact-info__icon {
-    fill: #2196f3;
-  }
-}
-
 .thumb-list__icon {
   fill: #AFB1B8;
 }
@@ -328,8 +322,13 @@ body {
   }
 }
 
+.contact-info__icon {
+  fill: currentColor;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
+    z-index: 100;
     transform: translateY(-100%);
     visibility: hidden;
     pointer-events: none;
@@ -745,7 +744,7 @@ body {
 }
 
 .clients {
-  padding-top: 60px;
+  padding-right: 60px;
   padding-bottom: 60px;
   background-color: #fff;
 }

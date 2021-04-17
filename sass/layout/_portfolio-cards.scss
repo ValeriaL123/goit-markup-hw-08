@@ -1,0 +1,112 @@
+// portfolio-cards
+
+.portfolio__link:hover .overlay__text,
+.portfolio__link:focus .overlay__text{
+  transform: translateY(0%);
+
+}
+
+.portfolio__item{
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:not(:last-child){
+    margin-bottom: 30px;
+  }
+  
+}
+
+
+.thumb-portfolio{
+  padding: 20px 24px;
+
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+
+  &__title{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-color;
+    
+    margin-bottom: 4px;
+    }
+
+    .thumb-portfolio__text{
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.03em;
+      color: $secondary-text-color;
+      }
+}
+
+
+
+.overlay{
+  position: relative;
+  overflow: hidden;
+  
+
+  &__text{
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 77px 24px;
+
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
+
+// Список 
+.portfolio{
+  @media screen and(min-width: $tablet){
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
+
+.portfolio__item{
+@media screen and( min-width: $tablet){
+  margin-right: 30px;
+  margin-bottom: 3px;
+  width: calc((100% - 4 * 30px) / 2);
+}
+@media screen and(min-width: $desktop){
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 6 * 30px) / 3);
+ }
+
+}
+
+
+.overlay__text{
+  @media screen and(min-width: $tablet){
+    height: 100%;
+    padding: 49px 24px;
+  }
+  @media screen and(min-width: $desktop){
+    padding: 63px 24px;
+  }
+}
