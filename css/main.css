@@ -530,7 +530,7 @@ body {
   color: #757575;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (max-width: 1199px) {
   .features__item:not(lsst-child) {
     margin-bottom: 30px;
   }
@@ -542,7 +542,13 @@ body {
     width: calc((100% - 4 * 30px) / 2);
   }
   .features__item:not(:nth-last-child(-n+2)) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 8 * 30px) / 4);
   }
 }
 

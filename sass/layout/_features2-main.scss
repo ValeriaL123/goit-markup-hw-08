@@ -16,6 +16,7 @@
     flex-wrap: wrap;
 
     margin-right: -30px;
+   
   
    
   }
@@ -65,7 +66,7 @@
 
 .features__item{
 
-    @media screen and( max-width: 767px){
+    @media screen and( max-width: 767px) and(max-width: 1199px){
       &:not(lsst-child){
         margin-bottom: 30px;
       }
@@ -75,8 +76,11 @@
     width: calc((100% - 4 * 30px) / 2);
 
     &:not(:nth-last-child(-n+2)){
-      margin-bottom: 40px;
-
+      margin-bottom: 30px;
+    }
+    @media screen and(min-width: $desktop){
+      width: calc((100% - 8 * 30px) / 4)
+      
     }
   }
   
@@ -108,4 +112,5 @@
   justify-content: center;
   align-items: center;
   height: 120px;
+ 
 }
