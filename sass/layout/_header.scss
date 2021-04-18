@@ -95,9 +95,9 @@
 
 
 .navigation__link--current{
+  color: $accent-color;
   @media screen and(min-width:$tablet){
-    color: $accent-color;
-
+  
     &::after{
       content:'';
       display: block;

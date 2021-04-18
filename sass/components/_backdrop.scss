@@ -8,7 +8,7 @@
   opacity: 1;
   transition: opacity 250ms ease-in;
 
-  @media screen and(min-width:$mobile) and (max-width:767px){
+  @media screen and(max-width:767px){
     overflow-y: scroll;
     padding-top:94px;
     padding-right: 15px;

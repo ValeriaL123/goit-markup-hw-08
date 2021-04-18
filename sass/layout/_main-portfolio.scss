@@ -11,7 +11,7 @@
 }
 
 .filter-list__item{
-  @media screen and(min-width: $mobile) and(max-width: 767px){
+  @media screen and(max-width: 767px){
     &:not(:nth-last-child(-n+2)){
       margin-bottom: 15px;
     }
